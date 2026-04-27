@@ -3,3 +3,21 @@
 html {
 	min-height: 100% !important;
 }
+
+body{
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(119, 182, 194, 0.25) 0px 20px,
+    white 20px 40px,
+    rgba(255, 210, 100, 0.25) 40px 60px,
+    white 60px 80px,
+    rgba(223, 109, 124, 0.25) 80px 100px,
+    white 100px 120px,
+    rgba(186, 110, 165, 0.25) 120px 140px,
+    white 140px 160px,
+    rgba(157, 217, 185, 0.25) 160px 180px,
+    white 180px 200px
+  );
+
+}
+
