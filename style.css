@@ -20,4 +20,52 @@ body{
   );
 
 }
+p{
+  font-family: "Quicksand";
+  font-weight: 500;
+}
 
+/* OSHIKATSU ---------------------------------------------------------------- */
+
+p.caption {
+  color: #FFFFFF
+}
+
+p.name{
+  color: #FFFFFF;
+  text-align: right;
+  font-family: "Pacifico";
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.oshi-container{
+  margin-top: 2em
+}
+
+.soma{
+  background-color: #BA6EA5;
+  border-radius: 10px;
+  margin:1em;
+  padding: 1em;
+}
+
+.berry{
+background-color: #DF6D7C
+}
+.tama{
+background-color: #FFD264
+}
+.tora{
+background-color: #77B6C2
+}
+.suzu{
+background-color: #9DD9B9
+}
+
+.soma img {
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit:cover;
+  border-radius: 5px
+}
