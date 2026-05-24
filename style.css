@@ -25,6 +25,28 @@ p{
   font-weight: 500;
 }
 
+h1{
+    font-family: "Pacifico";
+}
+
+/* LANDING PAGE  ---------------------------------------------------------------- */
+.menu-btn{
+text-align: center
+}
+
+.menu-btn button{
+  font-size:2em;
+  font-family: "Pacifico";
+  margin:10px;
+  background-color: #FDDAA0;
+  color: #12320D;
+  border: 2px solid #12320D;
+  padding:10px;
+  border-radius: 0.25em;
+
+}
+
+
 /* OSHIKATSU ---------------------------------------------------------------- */
 
 p.caption {
@@ -77,4 +99,15 @@ background-color: #9DD9B9
 
 .modal-custom{
   padding:1em;
+}
+
+.heading-box{
+width:100%;
+height: auto;
+}
+
+.heading{
+  color: #9DD9B9;
+  text-align: center;
+  font-size: 6em;
 }
