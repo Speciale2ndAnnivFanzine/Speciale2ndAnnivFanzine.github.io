@@ -1,4 +1,7 @@
 /* UNIVERSAL ---------------------------------------------------------------- */
+:root {
+	--awning-height: 100px;
+}
 
 html {
 	min-height: 100% !important;
@@ -61,7 +64,7 @@ text-align: center
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    height: 100vh;
+    height: calc(100vh - var(--awning-height));
     width: 100vw;
     margin: 0 auto;
     overflow: hidden;
@@ -137,10 +140,6 @@ text-align: center
 
 /* ── Mobile: hide characters, center the logo + buttons ── */
 @media (max-width: 768px) {
-    .characters-left,
-    .characters-right {
-        display: none;
-    }
 
     .landing-hero {
         min-height: unset;
@@ -150,12 +149,22 @@ text-align: center
     .hero-center {
         width: 100%;
     }
+.hero-logo {
+    width: 100%;
+    max-width: 400px;
+}
+
+.characters-left,
+.characters-right {
+    transform: none;
+        width: 50%;
+}
 }
 
 /* OSHIKATSU ---------------------------------------------------------------- */
 
 p.caption {
-  color: #FFFFFF
+  color: #1d1b1b
 }
 
 p.name{
@@ -267,7 +276,6 @@ background-color: #9DD9B9
 
 /* Brick backdrop behind the awning */
 .awning-brick {
-    height: 60%;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -313,14 +321,4 @@ background-color: #9DD9B9
     font-size: clamp(1rem, 2.2vw, 1.5rem);
     color: #FDDAA0;
     letter-spacing: 0.05em;
-}
-
-/* Scalloped valance along the bottom edge of the awning */
-.awning-scallop {
-    height: 8%;
-    width: 100%;
-    background-image: radial-gradient(circle at 10px 0, transparent 12px, #B5342E 13px);
-    background-size: 20px 20px;
-    background-repeat: repeat-x;
-    background-position: top;
 }
